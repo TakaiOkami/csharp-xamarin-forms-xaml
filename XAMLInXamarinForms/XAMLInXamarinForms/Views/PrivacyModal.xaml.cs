@@ -15,8 +15,6 @@ namespace XAMLInXamarinForms.Views
         public PrivacyModal()
         {
             InitializeComponent();
-
-            PopModal();
         }
 
         private async void AcceptButton_Clicked(object sender, EventArgs e)
@@ -24,9 +22,5 @@ namespace XAMLInXamarinForms.Views
             await this.Navigation.PopModalAsync(true);
         }
 
-        private async void PopModal()
-        {
-            await this.Navigation.PushAsync(new PrivacyModal(), true);
-        }
     }
 }
